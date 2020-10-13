@@ -15,5 +15,11 @@ jobs:
     steps:
     - name: Python Pylin GitHub Action
       uses: fylein/python-pylint-github-action@v1
-      with:
-          args: pip3 install -r requirements.txt && pylint --rcfile=.pylintrc python-project
+    - name: Pytnon pip install
+      run:  sudo apt-get -y install python3-pip
+    - name: install ptlint
+      run: sudo apt-get install pylint
+    - name: checking pylint for our project
+      run: |
+        pylint client1.py
+        pylint server1.py

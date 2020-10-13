@@ -16,7 +16,6 @@ def threaded(c):
 		for i in range(0,len(your_list)):
 			if data.decode("utf-8") in your_list[i]:
 				print(your_list[i])
-				#c.send(your_list[i])
 				Compare_list.append(your_list[i])
 		count1=0
 		count2=0

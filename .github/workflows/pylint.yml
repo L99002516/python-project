@@ -18,6 +18,6 @@ jobs:
     - name: install pylint
       run:  sudo apt-get install pylint
     - name: checking pylint
-      run:  pylint unittestdemo.py
+      run:  pylint python-project
 
         

@@ -1,7 +1,8 @@
 import socket 
-from unittestdemo import *
 from _thread import *
 import threading 
+from unittestdemo import *
+
 
 print_lock = threading.Lock() 
 Compare_list=[]
